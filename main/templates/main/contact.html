@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auction</title>
+<meta name="description" content="" />
+<meta name="keyword" content="" />
+
+
+{% load static %}
+
+<link rel="shortcut icon" type="img/png" href="{% static 'img/fav.png' %}" />
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+<link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}"> 
+<link rel="stylesheet" href="{% static 'css/slick.css' %}"> 
+<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/nav.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+<!-- Login -->
+<div class="container login-form">
+<div class="modal fade" id="myModal1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <div class="modal-title text-center">Auction Email Alerts Sign Up ? </div>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <div class="row login-top">
+            <div class="col">
+        <form>
+               
+
+                  <div class="row form-group">
+                 <div class="col-md-6 pt-4">
+                  <input type="Password" id="fname" class="form-control" placeholder="First Name " required>
+                </div>
+                <div class="col-md-6 pt-4">
+                  <input type="Password" id="fname" class="form-control" placeholder="Last Name " required>
+                </div>
+              </div>
+                
+                <div class="row form-group">
+                <div class="col-md-12 pt-4">
+                  <input type="text" id="fname" class="form-control" placeholder="Enter Email Adress" required>
+                </div>
+                </div>
+                
+            
+
+               
+            <div class="row form-group  pt-2">
+                <div class="col-md-12 text-center">
+                  <input type="submit" class="ban-btn" value="Submit">
+                </div>
+              </div>
+           </form>
+           </div>
+          </div>
+
+
+        
+
+        </div>
+
+
+           
+      </div>
+    </div>
+  </div>
+  </div>
+<!-- Login end -->
+
+
+
+
+<section class="tophead">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="social">
+          <ul>
+            <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href=""></a><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+            <li><a href=""></a><i class="fa fa-youtube-play" aria-hidden="true"></i></li>             
+            <li><a href=""><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-2 offset-4">
+        <h5>Call us: <span>570-694-4002</span></h5>
+      </div>
+      <div class="col-md-1 " data-toggle="modal" data-target="#myModal1"><img src="{% static 'img/msg-alert.png' %}" width="25px"></div>
+      <div class="col-md-2"><h6>Login/Signup &nbsp; <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+</h6></div>
+    </div>
+  </div>
+</section>
+
+<section class="menubar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+      <a href="index.html"><img src="{% static 'img/logo.png' %}"></a> </div>
+      <div class="col-md-7 offset-1 ">
+      
+
+<div id="main">
+    <nav>
+      <div class="nav-xbootstrap">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="javascript:void(0)">Auctons<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
+            <ul class="dropdown">
+              <li><a href="">Electronic</a></li>
+              <li><a href="">Furniture</a></li>
+              <li><a href="">Automobile</a></li>
+              <li><a href="">General</a></li>
+              <li><a href="">Designer Dress</a></li>
+                <li><a href="">Property</a></li>
+
+
+            </ul>
+          </li>
+          <li><a href="javascript:void(0)" >Locations<span class="glyphicon glyphicon-chevron-down iconsize"></span></a>
+            <ul class="dropdown">
+              <li><a href="#">Islington</a></li>
+              <li><a href="#">Lambeth</a></li>
+              <li><a href="#">Hounslow</a></li>
+                <li><a href="#">Greenwich</a></li>
+               <li><a href="#">Hackney</a></li> 
+            </ul>
+          </li>
+         <li><a href="#">FAQ</a></li>
+          <li><a href="#">Contacts</a></li>
+         <!--  <li><a href="https://xbootstrap.com">Premium Themes</a></li>
+          <li><a href="https://xbootstrap.com">Business</a></li> -->
+        </ul>
+      </div>
+     <!--  <div class="nav-bg-xbootstrap">
+        <div class="navbar-xbootstrap"> <span></span> <span></span> <span></span> </div>
+        <a href="https://xbootstrap.com" class="title-mobile">xBOOTSTRAP.COM</a>
+      </div> -->
+    </nav>
+   
+
+</div>
+      </div>
+      <div class="col-md-2">
+        <div class="row form-group">
+          <div class="col">
+            <input type="" class="form-control" name="">
+            <button><i class="fa fa-search" aria-hidden="true"></i>
+</button>
+          </div>
+        </div>
+      </div>
+        
+     
+    </div>
+  </div>
+</section>
+
+<section class="contact-ban">
+  <div class="container">
+    <div class="row">
+      <div class="col"><h1>Contact Us</h1></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact inn-pg-bg">
+<div class="container">
+
+</div>
+</section>
+<section class="contact-in pb-5 mb-5">
+<div class="container">
+<div class="row conform">
+<div class="col-md-6 p-5 conwhite">
+<form>
+
+<h2>Get in Touch</h2>
+<div class="row form-group">
+<div class="col-md-12 pt-3">
+<input type="text" name="name" placeholder="Name" id="post-name" class="form-control" required>
+</div>
+</div>
+<div class="row form-group">
+<div class="col-md-12 pt-3">
+<input type="email" name="email" placeholder="Email" id="post-contactemail" class="form-control" required>
+</div>
+</div>
+<div class="row form-group">
+<div class="col-md-12 pt-3">
+<input type="number" name="mob" placeholder="Mobile No" id="post-mob" class="form-control" required>
+</div>
+</div>
+<div class="row form-group">
+<div class="col-md-12 pt-3">
+<input type="text" name="message" placeholder="Message" id="post-msg" class="form-control" required>
+</div>
+</div>
+
+
+
+<div class="row form-group  pt-5">
+<div class="col-md-12">
+<input type="submit" class="btnSubmit" value="Submit">
+</div>
+</div>
+</form>
+</div>
+<div class="col-md-6 concolor p-5">
+<h3>Contact Information</h3>
+<p><span><i class="fa fa-map-marker" aria-hidden="true"></i></span> xzy, South Wales, England</p>
+<p><span><i class="fa fa-envelope" aria-hidden="true"></i></span>xyz@gmail.com</p>
+<p><span><i class="fa fa-skype" aria-hidden="true"></i></span>live:xyz</p>
+<p><span><i class="fa fa-mobile" aria-hidden="true"></i></span>UK : +44 123 989 1212 </p>
+<div class="social conct">
+<ul>
+<li><a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+<li><a href="#" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+<li><a href="#" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+<li><a href="#" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+<li><a href="#" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section>
+
+</section>
+
+
+
+
+
+
+<footer class="foot">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <img src="{% static 'img/logo-white.png' %}">
+        <p>Our stress-free finance department that can find financial solutions to save you money.</p>
+
+
+      </div>
+      <div class="col-md-3 featured">
+        <h4>Featured Links</h4>
+        <ul>
+          <li><a href="">About</a></li>
+          <li><a href="">Products</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Auctions</a></li>
+           <li><a href="">Guide & FAQ</a></li>
+          <li><a href="">Term</a></li>
+          <li><a href="">Privacy</a></li>
+          <li><a href="">Sitemap </a></li>
+        
+        </ul>
+        
+      </div>
+
+      <div class="col-md-3 gal">
+        <h4>Photo Gallery</h4>
+        <ul>
+          <li><img src="{% static 'img/latop.jpg' %}"></li>
+          <li><img src="{% static 'img/mobile.jpg' %}"></li>
+          <li><img src="{% static 'img/sofa.jpg' %}"></li>
+          <li><img src="{% static 'img/car.jpg' %}"></li>
+          <li><img src="{% static 'img/sofa.jpg' %}"></li>
+          <li><img src="{% static 'img/latop.jpg' %}"></li>
+          <li><img src="{% static 'img/mobile.jpg' %}"></li>
+          <li><img src="{% static 'img/car.jpg' %}"></li>
+
+          
+        </ul>
+      </div>
+
+      <div class="col-md-3 social">
+        <h4>Social Network</h4>
+        <ul>
+            <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+            <li><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+        </ul>
+
+          <div class="row form-group pt-5 subs">
+          <div class="col">
+           <h4>Subscribe Newsletter</h4>
+            <input type="" class="form-control mt-3" name="" placeholder="Enter Email Address">
+            <button><i class="fa fa-search" aria-hidden="true"></i>
+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row pt-5 mt-5 copyright">
+      <div class="col text-center">
+        <h6>© Copyright 2020 Auction</h6>
+      </div>
+    </div>
+  </div>
+  
+</footer>
+
+<script  type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.js' %}"></script>
+<script   src="{% static 'js/slick.js' %}"></script>
+
+ <script>
+           $('#carousel-1').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:1,
+            nav:false
+        },
+        1000:{
+            items:7,
+            nav:true,
+            autoplay: true,
+           loop: true
+        }
+    }
+})
+          </script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+  $('.ct-slick-homepage').on('init', function(event, slick){
+    $('.animated').addClass('activate fadeInUp');
+  });   
+
+  $('.ct-slick-homepage').slick({
+    autoplay: true,
+    autoplaySpeed: 10000,
+    pauseOnHover: false,
+  });     
+
+  $('.ct-slick-homepage').on('afterChange', function(event, slick, currentSlide) {
+    $('.animated').removeClass('off');
+    $('.animated').addClass('activate fadeInUp');
+  });   
+
+  $('.ct-slick-homepage').on('beforeChange', function(event, slick, currentSlide) {
+    $('.animated').removeClass('activate fadeInUp');
+    $('.animated').addClass('off');
+  });
+});
+
+$(document).ready(function() {
+  if ($('[data-background]').length > 0) {
+    $('[data-background]').each(function() {
+      var $background, $backgroundmobile, $this;
+      $this = $(this);
+      $background = $(this).attr('data-background');
+      $backgroundmobile = $(this).attr('data-background-mobile');
+      if ($this.attr('data-background').substr(0, 1) === '#') {
+        return $this.css('background-color', $background);
+      } else if ($this.attr('data-background-mobile') && device.mobile()) {
+        return $this.css('background-image', 'url(' + $backgroundmobile + ')');
+      } else {
+        return $this.css('background-image', 'url(' + $background + ')');
+      }
+    });
+  }
+});
+</script>
+
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.navbar-xbootstrap').click(function(){
+      $('.nav-xbootstrap').toggleClass('visible');
+      $('body').toggleClass('cover-bg');
+    });
+  });
+</script>
+
+</body>
+</html>

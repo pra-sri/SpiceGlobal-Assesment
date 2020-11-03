@@ -1,0 +1,16 @@
+{% extends 'main/index.html' %}
+
+{% comment %} {% block content %} {% endcomment %}
+
+<div class="modal fade" id='myModal2'>
+<form action='.' method='POST'> 
+{% csrf_token %}
+    {{ form.as_p }}
+
+    <input type='submit' value='Save'/>
+</form>
+</div>
+
+
+
+{% comment %} {% endblock %} {% endcomment %}
